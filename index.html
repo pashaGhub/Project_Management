@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="sidenav">
+      <form class="">
+        <div class="form-group">
+          <label for="projName">Project name</label>
+          <input type="text" class="form-control" id="projName">
+        </div>
+        <div class="form-group">
+          <label for="orderDate">Order date</label>
+          <input type="date" class="form-control" id="orderDate" required>
+        </div>
+        <div class="form-group">
+          <label for="expDate">Expiration date</label>
+          <input type="date" class="form-control" id="expDate" required>
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment</label>
+          <textarea class="form-control" id="comment" rows="8"></textarea>
+        </div>
+      </form>
+      <button type="button" class="btn btn-light create-btn width-btn" id="createBtn">Create</button>
+    </div>
+    <div class="project-list">
+      <div class="sort-options">
+        <!-- <div class="row"> -->
+          <button type="button" class="btn btn-outline-secondary width-btn col" id="nameBtn">Name</button>
+          <button type="button" class="btn btn-outline-secondary width-btn col" id="orderBtn">Order date</button>
+          <button type="button" class="btn btn-outline-secondary active width-btn col" id="expBtn">Expiration date</button>
+          <button type="button" class="btn btn-outline-secondary width-btn col" id="dltList">Deleted projects</button>
+          <button type="button" class="btn btn-outline-secondary width-btn col" id="activeList">Active projects</button>
+
+        <!-- </div> -->
+      </div>
+      <div class="container" id="printedProjects">
+
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="jScript.js"></script>
+
+  </body>
+</html>
